@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>DOM exercise, events and functions</title>
+		<script type="text/javascript" src="js/32-dom-exercise.js"></script>
+		<style>
+			.box{
+				width: 200px;
+				height: 250px;
+				float: left;
+				margin: 20px;				
+			}
+			.dashed{
+				border: 3px dashed black;
+				padding: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			1. Form: name, surname and age
+			2. Buttom to submit form: submit events
+			3. Show data by screen. Include a buttom that when clicking on it shows us the current data of the form
+			4. Form validation
+		-->
+		
+		<h1>DOM exercise, events amd functions - Oscar Parrilla's JS course</h1>
+		
+		<div class="box">
+			<form action="#" method="POST" id="form" onsubmit="return false;">
+				<label for="name">Name: </label><br/>
+				<input type="text" name="name" id="name" /><br/>
+				<span id="name_error"> </span>
+				
+				<label for="surname">Surname: </label><br/>
+				<input type="text" name="surname" id="surname" /><br/>
+				
+				<label for="age">Age: </label><br/>
+				<input type="number" name="age" id="age" /><br/>
+				
+				<input type="submit" value="Submit" id="submit" />
+			</form>	
+		</div>
+		
+		<div class="box dashed">
+			<h3>User information</h3>			
+			<hr>
+			<p id="p_name">
+				Name: <span></span>
+			</p>
+			<p id="p_surname">
+				Surname: <span></span>
+			</p>
+			<p id="p_age">
+				Age: <span></span>
+			</p>
+		</div>
+	</body>
+</html>
