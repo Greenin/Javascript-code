@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<title>Project with JavaScript</title>
+		
+		<!-- CSS styles -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link id="theme" rel="stylesheet" type="text/css" href="css/green.css" />
+		
+		<!-- jQuery -->		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		
+		<!-- Moment -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/locale/es.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment-with-locales.min.js"></script>
+		
+		<!-- My scripts -->
+		<script type="text/javascript" src="js/main.js"></script>
+		
+	</head>
+	<body>
+		<div id="selector-theme">
+			<div id="to-green"></div>
+			<div id="to-red"></div>
+			<div id="to-blue"></div>
+		</div>
+	
+		<section id="global">
+			
+			<!-- Header -->
+			<header>
+				<div id="logo">
+					<h1>JS Project</h1>
+				</div>
+				
+				<div class="clearfix"></div> 
+				
+				<nav id="menu">
+					<ul >
+						<li><a href="index.html">Home</a></li>
+						<li><a href="clock.html">Clock</a></li>
+						<li><a href="about.html">About me</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			
+			<!-- Content -->
+			<section id="content">
+				<div id="box">
+					<!-- Load the clock -->
+					<div id="clock"></div>
+				
+				</div>
+				
+				<aside id="sidebar">
+					<div id="about">
+						<h4><span>Who I am?</span></h4>
+						<img src="img/snail.jpg" />
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+					</div>
+					
+					<div id="login">
+						<h4><span>Login</span></h4>
+						<form>
+							<label for="name">
+								Name
+							</label>
+							<input type="text" name="name" id="form_name" />
+
+							<label for="email">
+								Email
+							</label>
+							<input type="text" name="email" />
+
+							<label for="password">
+								Password
+							</label>
+							<input type="password" name="password" />
+							
+							<input type="submit" value="Login" />
+						</form>
+					</div>
+					
+				</aside>
+				
+				<div class="clearfix"></div>
+			</section>
+		</section>
+		<footer>
+			Oscar Parrilla's JavaScript Master &copy;
+			
+			<a href="#" class="go-up">Go up</a>
+		</footer>
+	</body>
+</html>
