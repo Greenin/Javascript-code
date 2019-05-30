@@ -1,0 +1,58 @@
+
+<!--
+<div class="container">
+-->
+<div class="container" *ngIf="oProject">
+
+	<!--
+	<div class="image">
+		<img src="#"/>
+	</div>
+	-->
+	
+	<div class="image" *ngIf="oProject.image">
+		<img src="{{sUrl+'get-image/'+oProject.image}}"/>
+	</div>
+	
+
+	<div>
+
+		
+		<h1>{{oProject.name}}</h1>
+		<h3>{{oProject.description}}</h3>
+		<p>{{oProject.Category}}</p>
+		<p>{{oProject.langs}}</p>
+		
+		<!--
+		<h1>Project Name</h1>
+		<h3>Project Description</h3>
+		<p>Project Category</p>
+		<p>Project langs</p>
+		-->
+
+		<p *ngIf="bConfirm == false">
+			
+			<a [routerLink]="['/edit-project', oProject._id]" class="button-edit">Edit</a>
+			<a (click)="setConfirm(true)" class="button-delete">Delete</a>
+			
+			<!--
+			<a [routerLink]="['/edit-project', '5caf867c3ac1ec6cceb48ec3']" class="button-edit">Edit</a>
+			<a (click)="setConfirm(true)" class="button-delete">Delete</a>
+			-->
+		</p>
+
+		<p *ngIf="bConfirm == true">
+			
+			<a [routerLink]="['/edit-project', oProject._id]" class="button-edit">Edit</a>
+			<a (click)="deleteProject(oProject._id)" class="button-delete">Delete</a>
+			
+			<!--
+			<span class="confirm">Project will be deleted. Do you want to continue?</span><br/>
+			<a (click)="setConfirm(false)" class="button-edit">Cancel</a>
+			<a (click)="deleteProject('5cae37714ac79b21dc3e86f3')" class="button-delete">Delete permanently</a>
+			-->
+			
+		</p>
+
+	</div>
+</div>

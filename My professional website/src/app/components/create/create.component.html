@@ -1,0 +1,66 @@
+
+
+<div class="container" *ngIf="oProject">
+	<h2>{{sTitle}}</h2>
+
+	<div class="message success" *ngIf="sStatus =='success'">
+		Project created successfully! You can see it <a [routerLink]="['/project',oSaveProject._id]">here.</a>
+	</div>
+
+	<div class="message failed" *ngIf="sStatus =='failed'">
+		Error: Project NOT CREATED.
+	</div>
+
+	<form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
+		<p>
+			<label for="name">Name</label>
+			<input type="text" name="name" #name="ngModel" [(ngModel)]="oProject.name"
+			required/>
+			<span class="form_error" *ngIf="name.touched && !name.valid">
+				Name is required.	
+			</span>
+		</p>
+
+		<p>
+			<label for="description">Description</label>
+			<textarea name="description" #description="ngModel" [(ngModel)]="oProject.description" required></textarea>
+			<span class="form_error" *ngIf="description.touched && !description.valid">
+				Description is required.	
+			</span>
+		</p>
+
+		<p>
+			<label for="category">Category</label>
+			<input type="text" name="category" #category="ngModel" [(ngModel)]="oProject.category" required/>
+			<span class="form_error" *ngIf="category.touched && !category.valid">
+				Category is required.	
+			</span>
+		</p>
+
+		<p>
+			<label for="year">Year</label>
+			<input type="number" name="year" #year="ngModel" [(ngModel)]="oProject.year" required/>
+		</p>
+
+		<p>
+			<label for="langs">Languages</label>
+			<input type="text" name="langs" #langs="ngModel" [(ngModel)]="oProject.langs" required/>
+			<span class="form_error" *ngIf="langs.touched && !langs.valid">
+				Languages are required.	
+			</span>
+		</p>
+
+		<p>
+			<label for="image">Project image</label>
+			<!--	
+			<span class="image" *ngIf="oProject.image" style="float: none;">
+				<img src="{{sUrl+'get-image/'+oProject.image}}" style="width: 100px;"/>
+			</span><br/>
+			-->
+			<input type="file" name="image" placeholder="Upload image" (change)="fileChangeEvent($event)"/>
+		</p>
+
+		<input type="submit" value="Send" [disabled]="!projectForm.form.valid"/>
+
+	</form>
+</div>

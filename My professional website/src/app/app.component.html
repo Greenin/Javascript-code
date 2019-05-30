@@ -1,0 +1,20 @@
+<header>
+  <ul>
+    <li><a [routerLink]="['/about-me']" [routerLinkActive]="['actived']">About me</a></li>
+    <li><a [routerLink]="['/portfolio']" [routerLinkActive]="['actived']">Portfolio</a></li>
+    <li id="logo"><a href="#">OP</a></li>
+    <!--
+    <li><a [routerLink]="['/create-project']" [routerLinkActive]="['actived']">Create project</a></li>
+	-->
+	<li><a [routerLink]="['/resume']" [routerLinkActive]="['actived']">Resume</a></li>
+    <li><a [routerLink]="['/contact']" [routerLinkActive]="['actived']">Contact</a></li>
+  </ul>
+</header>
+
+<section id="content">
+  <router-outlet></router-outlet>
+</section>
+
+<footer>
+  Oscar Parrilla's CV &copy;
+</footer>
