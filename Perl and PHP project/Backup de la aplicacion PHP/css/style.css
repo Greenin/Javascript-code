@@ -1,0 +1,294 @@
+a, button {
+    cursor: pointer;
+}
+
+button span{
+    margin-right: 0;
+    padding-right: 0;
+    position: relative;
+    top: -2px;
+}
+
+#buscar_text { 
+/*    margin: 2px 0 0 385px;*/
+}
+
+#bloquear_pantalla {
+    display: none;
+    background-color: #666;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+}
+
+#loading {
+    display: none;
+    top: 50%;
+    position: fixed;
+    z-index: 9999;
+}
+
+#radio_ini {
+    display: none;
+}
+
+.da_titulo{
+/*    clear: both;
+    float: left;
+    font-weight: bold;
+    margin: 5px 0 15px;
+    width: 200px;*/
+    color: #D4D4D4;
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+/*    clear: both; */
+}
+
+.da_publicacion {
+    float: left;
+    clear: both; 
+}
+
+/*.editbox {
+    display:none
+}*/
+
+td {
+    padding:5px;
+}
+
+.editbox {
+    font-size:14px;
+    width:690px;
+    background-color:#ffffcc;
+    border:solid 1px #000;
+    padding:4px;
+}
+
+.edit_tr:hover {
+    background: url(../img/editpaste.png) right no-repeat #80C8E5;
+    cursor:pointer;
+}
+
+.span_text {
+    color: #D4D4D4;
+    font-size: 14px;
+    width: 145px;
+}
+
+.tr_editar {
+    vertical-align: middle;    
+}
+
+#camino_container{
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    width: 350px;
+    color: white;
+}
+
+.camino_separacion{
+    -moz-border-radius: 25px 25px 25px 25px;
+    border-radius: 25px 25px 25px 25px;
+    background-color: #FFC23F;
+    padding: 5px 10px;
+    margin-bottom: 25px;
+}
+
+.camino_autor{
+    -moz-border-radius: 25px 25px 25px 25px;
+    border-radius: 25px 25px 25px 25px;
+    background-color: #3F7FFF;
+    padding: 5px 10px;
+}
+
+.camino_publicacion{
+    -moz-border-radius: 25px 25px 25px 25px;
+    border-radius: 25px 25px 25px 25px;
+    background-color: #49FF38;
+    padding: 5px 10px;
+}
+
+.camino_img_down{
+    margin: 6px 0;
+}
+
+/*#div_pub_anno, #div_autores_anno, #div_mujeres_anno, #div_hombres_anno, #div_autores_nacionalidad_anno {
+    margin: 10px 0;
+}*/
+
+.img_button {
+    padding-top: 2px;
+}
+
+/*boton{
+    background-color: transparent;
+    border: medium none;
+    cursor: pointer;
+    font-size: 10px;
+    margin: auto 0;
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+}*/
+
+.titulo_especial{
+    background-color: Brown;
+    padding: 3px;
+}
+
+.table_width {
+    width: 874px;
+}
+
+#table_body, #table_body tr, #table_body td, #table_body th {
+    border: solid 1px white;
+}
+
+
+.table_title {
+    background-color: #ffffcc;
+    color:black;
+}
+
+.table_numero {
+    color: black;
+    background-color: #ccccff;
+    vertical-align: middle;
+}
+
+.table_links {
+    vertical-align: top;
+    width: 50px;
+}
+
+#buscar_text_next{
+    float: right;
+    margin-right: 10px;
+    margin-top: 1px;
+    position: relative;
+}
+
+#titulo_new{
+    /*margin-left: 5px;*/
+    width: 685px;
+}
+
+.link_pub, .link_pub a, .link_pub a:hover, .link_pub a:visited, .link_pub a:link {
+    color: black;
+    text-decoration: none;
+}
+
+#datos_autor_img{
+    cursor: pointer;
+    padding-left: 10px;
+    padding-top: 2px;
+    position: absolute;
+}
+
+#editar_autor_img {
+    cursor: pointer;
+    margin-left: 37px;
+    padding-top: 2px;
+    position: absolute;
+}
+
+#editar_pub_img {
+    cursor: pointer;
+    margin-left: 8px;
+    padding-top: 2px;
+    position: absolute;
+}
+
+#editar_centro_img, #editar_grupo_img {
+    cursor: pointer;
+    margin-left: 10px;
+    padding-top: 2px;
+    position: absolute;
+}
+
+a.publicacion {
+    color: dodgerblue;
+}
+
+.line_separator{
+    clear: both;
+    padding: 5px 0;
+}
+
+.autor_content_title {
+    color: wheat;
+    font-size: 14px;
+}
+
+#sesion {
+    float: right;
+    position: relative;
+    top: -25px;
+    right: 10px;
+}
+
+#ini_sesion{
+    -moz-border-radius: 25px 0 25px 25px;
+    border-radius: 25px 0 25px 25px;
+    background-color: white;
+    display: none;
+    padding: 0 20px;
+    position: absolute;
+    right: 40px;
+    top: 19px;
+    width: 240px;
+    z-index: 9999999;
+}
+
+#form_sesion_ini, #form_sesion_close{
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+#sesion_ini_button{
+    margin-bottom: 10px;
+    margin-left: 57px;
+    margin-top: 10px;
+}
+
+#usuario, #pass {
+    float: right;
+}
+
+.login_span{
+    float: left;
+    margin-top: 4px;
+}
+
+#img_ini_sesion{
+    position: relative;
+    top: 2px;
+}
+
+#mensaje_login{
+    color:red;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#opciones_bd_container{
+    padding: 0 30px;
+}
+
+.art-content-layout {
+    color: white;
+}
+
+
+
+
